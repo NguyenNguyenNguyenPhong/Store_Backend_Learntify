@@ -1,9 +1,8 @@
 package MAIN.rest;
 
 import MAIN.entity.Blog;
-import MAIN.entity.Course;
 import MAIN.service.BlogService;
-import MAIN.service.CourseService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,6 +12,7 @@ public class BlogRestController {
 
     private BlogService blogService;
 
+    @Autowired
     public BlogRestController(BlogService blogService) {
         this.blogService = blogService;
     }
