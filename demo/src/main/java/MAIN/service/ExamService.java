@@ -1,0 +1,18 @@
+package MAIN.service;
+
+import MAIN.entity.Blog;
+import MAIN.entity.Exam;
+
+import java.util.List;
+
+public interface ExamService {
+
+    List<Exam> findAll();
+
+    Exam findById(int id);
+
+    Exam save(Exam exam);
+
+    void  deleteById(int id);
+
+}
